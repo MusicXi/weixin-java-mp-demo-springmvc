@@ -24,6 +24,7 @@
         <commons-lang3.version>3.5</commons-lang3.version>
         <jackson.version>2.8.3</jackson.version>
         <jetty-maven-plugin.version>9.3.0.RC0</jetty-maven-plugin.version>
+        <springfox-swagger2.version>2.7.0</springfox-swagger2.version>
     </properties>
 
     <dependencies>
@@ -83,6 +84,23 @@
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>${jackson.version}</version>
+        </dependency>
+
+        <!-- 构建Restful API -->
+        <!-- swagger2 -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${springfox-swagger2.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <!-- swagger2 UI -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${springfox-swagger2.version}</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 

@@ -37,4 +37,8 @@
 
 	<aop:aspectj-autoproxy proxy-target-class="true" />
 
+	<!-- 配置Swagger相关静态资源 -->
+	<mvc:resources location="classpath:/META-INF/resources/" mapping="swagger-ui.html"/>
+	<mvc:resources location="classpath:/META-INF/resources/webjars/" mapping="/webjars/**"/>
+	<bean class="com.github.binarywang.demo.wx.mp.config.MySwaggerConfig"/>
 </beans>
